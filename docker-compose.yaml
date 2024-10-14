@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  uvdesk:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    volumes:
+      - .:/var/www/uvdesk
+    ports:
+      - "8080:80"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

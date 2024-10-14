@@ -3,8 +3,6 @@ LABEL maintainer="akshay.kumar758@webkul.com"
 
 ENV GOSU_VERSION 1.11
 
-RUN adduser uvdesk -q --disabled-password --gecos ""
-
 # Install base supplimentary packages
 RUN apt-get update && apt-get -y upgrade \
     && apt-get update && apt-get install -y software-properties-common && add-apt-repository -y ppa:ondrej/php \
@@ -22,12 +20,16 @@ RUN apt-get update && apt-get -y upgrade \
         php7.4-imap \
         php7.4-mysql \
         php7.4-mailparse \
+        php7.4-curl \
+	    vim \
         ca-certificates; \
     if ! command -v gpg; then \
 		apt-get install -y --no-install-recommends gnupg2 dirmngr; \
 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then \
 		apt-get install -y --no-install-recommends gnupg-curl; \
 	fi;
+
+RUN adduser uvdesk -q --disabled-password --gecos ""
 
 COPY ./.docker/config/apache2/env /etc/apache2/envvars
 COPY ./.docker/config/apache2/httpd.conf /etc/apache2/apache2.conf
