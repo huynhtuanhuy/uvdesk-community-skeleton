@@ -15,11 +15,11 @@
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^2.20",
         "google/recaptcha": "^1.2",
-        "uvdesk/automation-bundle": "dev-1.2",
-        "uvdesk/core-framework": "dev-1.2",
-        "uvdesk/extension-framework": "dev-1.2",
-        "uvdesk/mailbox-component": "dev-1.2",
-        "uvdesk/support-center-bundle": "dev-1.2",
+        "uvdesk/automation-bundle": "1.2.x-dev",
+        "uvdesk/core-framework": "1.2.x-dev",
+        "uvdesk/extension-framework": "1.2.x-dev",
+        "uvdesk/mailbox-component": "1.2.x-dev",
+        "uvdesk/support-center-bundle": "1.2.x-dev",
         "intervention/image": "^2.4",
         "intervention/imagecache": "^2.5.2",
         "knplabs/knp-paginator-bundle": "^5.8",
@@ -57,79 +57,24 @@
     },
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "uvdesk/mailbox-component",
-                "version": "dev-1.2",
-                "source": {
-                    "url": "https://github.com/huynhtuanhuy/uvdesk-mailbox-component.git",
-                    "type": "git",
-                    "reference": "1.2"
-                },
-                "autoload": {
-                    "classmap": [""]
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/huynhtuanhuy/uvdesk-mailbox-component.git"
         },
         {
-            "type": "package",
-            "package": {
-                "name": "uvdesk/core-framework",
-                "version": "dev-1.2",
-                "source": {
-                    "url": "https://github.com/huynhtuanhuy/uvdesk-core-framework.git",
-                    "type": "git",
-                    "reference": "1.2"
-                },
-                "autoload": {
-                    "classmap": [""]
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/huynhtuanhuy/uvdesk-core-framework.git"
         },
         {
-            "type": "package",
-            "package": {
-                "name": "uvdesk/extension-framework",
-                "version": "dev-1.2",
-                "source": {
-                    "url": "https://github.com/huynhtuanhuy/uvdesk-extension-framework.git",
-                    "type": "git",
-                    "reference": "1.2"
-                },
-                "autoload": {
-                    "classmap": [""]
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/huynhtuanhuy/uvdesk-extension-framework.git"
         },
         {
-            "type": "package",
-            "package": {
-                "name": "uvdesk/automation-bundle",
-                "version": "dev-1.2",
-                "source": {
-                    "url": "https://github.com/huynhtuanhuy/uvdesk-automation-bundle.git",
-                    "type": "git",
-                    "reference": "1.2"
-                },
-                "autoload": {
-                    "classmap": [""]
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/huynhtuanhuy/uvdesk-automation-bundle.git"
         },
         {
-            "type": "package",
-            "package": {
-                "name": "uvdesk/support-center-bundle",
-                "version": "dev-1.2",
-                "source": {
-                    "url": "https://github.com/huynhtuanhuy/uvdesk-support-center-bundle.git",
-                    "type": "git",
-                    "reference": "1.2"
-                },
-                "autoload": {
-                    "classmap": [""]
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/huynhtuanhuy/uvdesk-support-center-bundle.git"
         }
     ],
     "require-dev": {
